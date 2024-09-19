@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group input, .form-group textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.form-group button {
+	padding: 10px 15px;
+	background-color: #5cb85c;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+table {
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+th {
+	background-color: #5cb85c;
+	color: white;
+}

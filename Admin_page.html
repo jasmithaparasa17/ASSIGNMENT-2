@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="Admin_Page.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Manage Products</h2>
+
+		<!-- Form to add or update a product -->
+		<form action="/products/admin" method="POST" class="form-group">
+			<input type="hidden" name="id"> <input type="text"
+				name="name" placeholder="Product Name" required>
+			<textarea name="description" placeholder="Product Description"
+				required></textarea>
+			<input type="number" name="price" placeholder="Product Price"
+				required>
+			<button type="submit">Save Product</button>
+		</form>
+
+		<!-- List of products -->
+		<h3>Product List</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Sample Product</td>
+					<td>A great product description.</td>
+					<td>$100</td>
+					<td><a href="#">Edit</a> | <a href="#"
+						onclick="return confirm('Are you sure?')">Delete</a></td>
+				</tr>
+				<!-- More rows can be added dynamically -->
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
