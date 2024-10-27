@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <link rel="stylesheet" href="Leave_application.css"> <!-- External stylesheet -->
+    <style>
+        /* Inline styles for form */
+        form {
+            margin:auto;
+            width: 35%;
+            padding-left:35px;
+            padding-right:45px;
+            border: 1px solid black;
+        }
+        label {
+            display: block;
+            margin-bottom:auto;  
+         }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Leave Application Form</h1>
+    <form>
+        <label>Date (Today): <span><input type="text" placeholder="dd-mm-yyyy"/></span></label>
+        
+        <label for="name">Applicant Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="authority">Authority (Principal/HOD):</label>
+        <input type="text" id="authority" name="authority" required placeholder="Enter authority">
+
+        <label for="reason">Leave Reason:</label>
+        <textarea id="reason" name="reason" required></textarea>
+
+        <label for="startDate">Leave Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <label for="endDate">Leave End Date:</label>
+        <input type="date" id="endDate" name="endDate" required>
+
+        <button type="submit">Apply</button>
+    </form>
+<script src="Leave.js">
+</script>
+</body>
+</html>
