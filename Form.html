@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<style>
+    form{
+        padding-left:500px; 
+        padding-top:150px; 
+        display:block;
+        
+    }
+</style>
+<body>
+    
+    <form id="jobApplicationForm" onsubmit="validateForm(event)">
+        <h2>Job Application Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <br><br>
+        <label type="radio" name="education" value="Education">Educational Qualification:</label>
+        <label><input type="radio" name="education" value="SSC"> SSC</label>
+        <label><input type="radio" name="education" value="Inter"> Inter</label>
+        <label><input type="radio" name="education" value="Degree"> Degree</label>
+        <br>
+        <br>
+        <label type="radio" name="gender" value="Gender">Gender:</label>
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <br><br>
+        <label for="position">Apply for:</label>
+        <select id="position" name="position" required>
+            <option value="">-- Select Position --</option>
+            <option value="Analyst">Analyst</option>
+            <option value="Developer">Developer</option>
+            <option value="Administrator">Administrator</option>
+            <option value="Data Scientist">Data Scientist</option>
+        </select>
+        
+        <br><br>
+        <button type="submit">Submit Application</button>
+    </form>
+    <script src="Form.js"></script>
+</body>
+</html>
